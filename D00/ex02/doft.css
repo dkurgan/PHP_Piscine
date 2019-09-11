@@ -1,0 +1,173 @@
+body {
+  background-color: #666666;
+}
+.p {
+  font-family: Verdana;
+}
+.grey_block {
+  background-color: #909090;;
+  border-radius: 10px;
+  box-shadow: 6px 6px 8px  black;
+}
+.bricks {
+    display: block;
+      background-image: url("resources/brick.jpg");
+      background-repeat: repeat;
+      background-size: 27%;
+}
+.mid {
+  display: inline-block;
+  width: 70%;
+  height: 50%;
+  margin-left: 15%;
+  margin-top: 1%;
+}
+.top_block {
+  width: 75%;
+  height: auto;
+  margin:auto;
+  position: relative;
+  z-index: 1;
+}
+.top_right {
+  width: 100%;
+  height: auto;
+  float: right;
+  width: 3%;
+}
+.left_block{
+  width: 8%;
+  height: auto;
+  padding: 1%;
+  float: left;
+  margin-bottom: 2%;
+}
+.right_block{
+  width: 8%;
+  height: auto;
+  padding: 1%;
+  float: right;
+  padding-bottom: 13%;
+}
+.mid_block {
+  width: 74%;
+  height: auto;
+  padding: 1%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  z-index: 1;
+}
+.green {
+  display: inline-block;
+  background-color: #98FB98;
+  width: 37%;
+  margin-top: -6%;
+  margin-left: -6%;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-bottom: 5%;
+}
+#day42 {
+  display: inline-block;
+  width: 38%;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+#reload {
+  display: block;
+  width: 60%;
+  margin-top: 3px;
+}
+#close {
+  width: 60%;
+  margin-top: 210%;
+}
+#loupe {
+  display: inline-block;
+  position: absolute;
+  width: 22%;
+  margin-left: 35%;
+  z-index: 1;
+}
+#arrow {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+}
+#hand {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 3px;
+}
+#eye {
+  display: block;
+  width: 60%;
+  border: 3px solid red;
+  border-radius: 5px;
+  margin: auto;
+}
+#tools {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+#chat {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+#cluster {
+  vertical-align: center;
+ display: inline-block;
+ width: 100%;
+}
+#book {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+#towel {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+#brick {
+  display: block;
+  width: 30%;
+  visibility: hidden;
+}
+#big_word {
+  font-size: 20px;
+  font-family: Georgia;
+}
+#shadow {
+text-shadow: 6px 6px 5px red;
+}
+#form {
+  width: 60%;
+  display: inline-block;
+}
+#text_row {
+  margin-top: 1%;
+}
+#ikea {
+  width:10%;
+  height: 43px;
+  float: right;
+  margin-top: -22%;
+  margin-right: 57%;
+  position: relative;
+}
+
+#apple {
+  width:20%;
+  height: 43px;
+  float: right;
+  margin-top: -22%;
+  margin-right: 0%;
+  position: relative;
+}

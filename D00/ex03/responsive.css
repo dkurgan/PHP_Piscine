@@ -1,0 +1,87 @@
+footer {
+  font-family: monospace;
+  font-style: italic;
+  color: white;
+  text-align: right;
+}
+
+body {
+  background-image: url(https://wallpaperplay.com/walls/full/5/8/5/76997.jpg);
+  font-family: Arial;
+}
+
+tb {
+  align-content: center;
+}
+
+.atomic-number {
+  text-align: left;
+  font-size: 10px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.elem {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.atomic-weight {
+  text-align: right;
+  margin-bottom: 2px;
+  margin-top: 1px;
+  font-size: 10px;
+  margin-right: 3px;
+}
+
+.none-metal {
+  background-color: #CACACA;
+  width: 70px;
+  margin-left: 3px;
+}
+
+.alkali-metal {
+  background-color: #F6B26B;
+  width: 70px;
+}
+
+.alkaline {
+  background-color: #E06666;
+  width: 70px;
+}
+
+.transition {
+  background-color: #FFD966;
+  width: 70px;
+}
+
+.metal {
+  background-color: #3F8D1D;
+  width: 70px;
+}
+
+.metalloid {
+  background-color: #78EC46;
+  width: 70px;
+}
+
+.noble_gas {
+  background-color: #2E2EC7;
+  width: 70px;
+}
+
+.halogen {
+  background-color: #6FA8DC;
+  width: 70px;
+}
+
+.lanthanide {
+  background-color: #8E7CC3;
+  width: 70px;
+}
+
+.actinide {
+  background-color: #C27BA0;
+  width: 70px;
+}
