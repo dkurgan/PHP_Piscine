@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Authorization</title>
+    <style type="text/css">
+      body {
+        background-color: #ecfcff;
+      }
+      .button {
+  padding: 12px 80px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 5px;
+  border-radius: 7px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: white;
+  font-family: "Lucida Console", Monaco, fantasy;
+  color: black;
+  box-shadow: 1px 1px 3px #5edfff;
+  border: 2px solid #5edfff;
+}
+
+.button2:hover {
+  background-color: #5edfff;
+  color: white;
+}
+
+      .Text{
+        font-size: 20px;
+        font-style: italic;
+        font-family: "Lucida Console", Monaco, monospace;
+      }
+      .forma {
+        border-radius: 5px;
+        padding-top: 2%;
+        box-shadow: 5px 5px 10px #b2e4d5;
+        background-color: #c7f0db;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+  .block {
+    margin:5px;
+    box-shadow: 0.5px 0.5px 1px;
+    padding-top: 3px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+  }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form action="modif.php" method="POST">
+        <div class="forma">
+        <div class="Text">Username: </div>
+        <input class="block" type="text" name="login" value=""> <br />
+        <div class="Text">Old Password:</div>
+        <input class="block" type="password" name="oldpw" value=""> <br />
+        <div class="Text">New Password: </div>
+        <input class="block" type="password" name="newpw" value=""> <br />
+        <input class="button button2" type="submit" name="submit" value="OK">
+        </div>
+      </form>
+      </center>
+  </body>
+</html>
