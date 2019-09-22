@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ballon</title>
+    <style type="text/css">
+    body{
+      background-color: #eae9e9;
+    }
+      #baloon {
+        margin-top: 13%;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: rgb(199, 13, 58);
+        box-shadow: 5px 5px 10px grey;
+      }
+    </style>
+    <script type="text/javascript">
+    var size = 200;
+    var color = 1;
+    function colorChange(color) {
+      if (color == 1)
+        baloon.style.backgroundColor = 'rgb(199, 13, 58)';
+      if (color == 2)
+        baloon.style.backgroundColor = 'rgb(156, 241, 150)';
+      if (color == 3)
+        baloon.style.backgroundColor = 'rgb(50, 219, 198)';
+    }
+    on_click = () =>{
+      color++;
+      if (color == 4)
+        color = 1;
+      colorChange(color);
+      size += 10;
+      if (size > 420)
+        size = 200;
+        putSize(size);
+    }
+    function putSize(size){
+      baloon.style.width = size + 'px';
+      baloon.style.height = size + 'px';
+      baloon.style.borderRadius = size + 'px';
+    }
+    on_leave = () => {
+      color--;
+      if (color < 1)
+        color = 3;
+      colorChange(color);
+      size -= 5;
+      if (size <= 200)
+        size = 200;
+        putSize(size);
+    }
+    </script>
+  </head>
+  <body>
+    <center>
+    <div id="baloon" onclick="on_click()" onmouseleave="on_leave()">
+    </div>
+    </center>
+  </body>
+</html>

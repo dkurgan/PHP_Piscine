@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body {
+      background-color: #ecfcff;
+    }
+      #left {
+        font-family: 'Cute Font';
+        font-size: 40px;
+        width: 120px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px;
+      }
+      #right {
+        border-radius: 15px;
+        border: none;
+        font-family: 'Cute Font';
+        font-size: 40px;
+        width: 120px;
+        height: 30px;
+        box-shadow: 1px 1px 1px;
+      }
+      #oper {
+        box-shadow: 1px 1px 1px;
+        font-family: 'Cute Font';
+        font-size: 25px;
+        width: 50px;
+        height: 45px;
+      }
+      #button{
+        font-family: 'Mansalva';
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px 50px;
+        color: white;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+         border-radius: 15px;
+        background-color: white;
+        color: black;
+        border: 2px solid #ff4893;
+      }
+      #button:hover {
+        background-color: #ff4893;
+        color: white;
+      }
+      .calc{
+        border-radius: 20px;
+        box-shadow: 5px 5px 8px;
+        margin-top: 10%;
+        padding-top: 30px;
+        width: 400px;
+        background-color: #1089ff;
+      }
+    </style>
+    <script type="text/javascript">
+
+    function validate (num) {
+      if (num > -1)
+      return true;
+    }
+    calculate = () =>{
+            var num1 = Number(left.value);
+            var num2 = Number(right.value);
+            var op = oper.value;
+
+            if (!validate(num1) || !validate(num2)){
+              alert("Error :(")
+              return;
+            }
+            if ((op == 'slash' || op == 'perc') && num2 == '0'){
+              alert("It's over 9000!");
+              console.log("It's over 9000!");
+              return ;
+            }
+
+            switch (op){
+              case 'plus':
+              res = (num1 + num2);
+              alert(res);
+                break;
+              case 'minus':
+                res = num1 - num2;
+                alert(res);
+                break;
+              case 'star':
+                res = num1 * num2;
+                alert(res);
+                break;
+              case 'slash':
+                res = num1 / num2;
+                alert(res)
+                break;
+              case 'perc':
+                res = num1 % num2;
+                alert(res);
+                break;
+            }
+            console.log(num1, op, num2, '=', res);
+        }
+        setInterval(() => {
+                alert("Please, use me...");
+            }, 30000);
+    </script>
+  </head>
+  <body>
+    <center>
+    <div class="calc">
+      <input type="number" id="left">
+      <select id="oper">
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="star">*</option>
+        <option value="slash">/</option>
+        <option value="perc">%</option>
+      </select>
+      <input type="number" id="right"><br>
+      <button type="button" id="button" onclick="calculate()">Try me</button>
+    </div>
+      </center>
+  </body>
+</html>
